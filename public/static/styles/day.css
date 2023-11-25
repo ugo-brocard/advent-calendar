@@ -1,0 +1,41 @@
+.day {
+    display: flex;
+    justify-content: space-between;
+    
+    margin: 0 2rem;
+}
+
+.day > .infos {
+    flex: 4;
+    margin-bottom: 2rem;
+}
+
+.day > .infos > h2.title {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+.day > .infos > .content > ul {
+    margin: 0 1.5rem;
+}
+
+.day > .hints {
+    flex: 1;
+    margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+    .day {
+        flex-direction: column;
+    }
+
+    .day > .infos > h2.title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .day > .infos > h2.title {
+        font-size: 1.1rem;
+    }
+}

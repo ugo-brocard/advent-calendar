@@ -1,0 +1,70 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "f11ce681cf389b579546277a3ad1c8b5",
+    "packages": [
+        {
+            "name": "ugo-brocard/router",
+            "version": "1.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ugo-brocard/router.git",
+                "reference": "e7c749089598f87f5c21d62edf44101fb401e924"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ugo-brocard/router/zipball/e7c749089598f87f5c21d62edf44101fb401e924",
+                "reference": "e7c749089598f87f5c21d62edf44101fb401e924",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Router\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ugo Brocard",
+                    "email": "ugo.brocard.official+contact@gmail.com"
+                }
+            ],
+            "description": "This Composer package simplifies route management in your PHP applications by allowing the use of PHP attributes to define routes in an elegant and expressive way. It streamlines the setup of custom routes, enabling developers to define routing rules that are clear and intuitive.",
+            "keywords": [
+                "attributes",
+                "composer",
+                "controllers",
+                "library",
+                "php-library",
+                "php8",
+                "php8.2",
+                "routeing",
+                "router"
+            ],
+            "support": {
+                "issues": "https://github.com/ugo-brocard/router/issues",
+                "source": "https://github.com/ugo-brocard/router/tree/1.1.4"
+            },
+            "time": "2023-11-01T15:00:37+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
+}

@@ -1,0 +1,19 @@
+.navbar {
+    width: 100vw;
+    height: 3rem;
+    padding: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: inherit;
+}
+
+.navbar > a {
+    text-decoration: none;
+    color: #6495ed;
+}
+
+.navbar > p.emoji {
+    font-size: 1.5rem;
+}

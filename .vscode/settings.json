@@ -1,0 +1,20 @@
+{
+    "cSpell.language": "en,fr",
+    "cSpell.words": [
+        "bytearray",
+        "celsius",
+        "classmethod",
+        "delattr",
+        "divmod",
+        "fahrenheit",
+        "frozenset",
+        "getattr",
+        "hasattr",
+        "isinstance",
+        "issubclass",
+        "memoryview",
+        "repr",
+        "setattr",
+        "staticmethod"
+    ]
+}

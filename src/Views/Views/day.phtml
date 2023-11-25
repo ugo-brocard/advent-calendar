@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="/static/styles/day.css">
+
+<div class="day">
+    <div class="infos">
+        <h2 class="title">
+            <?= $day->getTitle() ?>
+        </h2>
+        
+        <div class="content"><?= $day->getContent() ?></div>
+    </div>
+    
+    <div class="hints">
+        <h3>Indices</h3>
+        <?php foreach ($day->getHints() as $hint) {?>
+            <li class="hint">
+                <?= $hint ?>
+            </li>
+        <?php } ?>
+    </div>
+</div>

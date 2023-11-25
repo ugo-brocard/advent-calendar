@@ -1,0 +1,35 @@
+.calendar {
+    margin: 0 1rem;
+
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+
+    min-height: calc(100vh - 6.5rem);
+}
+
+.calendar > .day {
+    font-size: 2rem;
+    text-decoration: none;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    color: #6495ed;
+    border: 3px dashed #6495ed;
+}
+
+.calendar > .day.unlocked {
+    font-weight: bold;
+    background-color: #6494ed40;
+
+    transition: all ease-in .1s;
+}
+
+.calendar > .unlocked:hover {
+    background-color: #6494ed80;
+}

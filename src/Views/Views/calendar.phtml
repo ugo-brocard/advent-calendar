@@ -1,0 +1,25 @@
+<?php
+date_default_timezone_set("Europe/Paris");
+$date = new DateTime( "11-12-2023" ); // TODO:date("d-m-Y") );
+?>
+
+<link rel="stylesheet" href="/static/styles/calendar.css">
+
+<div class="calendar">
+    <?php foreach ($days as $day) {?>
+        <?php 
+            $id = $day->getId() + 1;
+            $dayDate = new DateTime($id . "-12-2023"); 
+        ?>
+
+        <?php if ($dayDate <= $date) { ?>
+            <a class="day unlocked" href="/day/<?= $id ?>">
+                <?= $id ?>
+            </a>
+        <?php } else { ?> 
+            <a class="day">
+                <?= $id ?>
+            </a>
+        <?php } ?>
+    <?php } ?>
+</div>
