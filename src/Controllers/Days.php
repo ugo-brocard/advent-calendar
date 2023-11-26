@@ -3,6 +3,7 @@ declare(strict_types = 1);
 
 namespace AdventCalendar\Controllers;
 
+use AdventCalendar\Middlewares\DateMiddleware;
 use Router\Attributes\Get;
 use AdventCalendar\Models\Day;
 use AdventCalendar\Views\View;
@@ -20,17 +21,11 @@ class Days {
         return View::render("calendar", "main", ["days" => $days]);
     }
 
-    #[Get("/day/@[id: int]")] // TODO: , middlewares: [[DateMiddleware::class, "checkDate"]])]
+    #[Get("/day/@[id: int]", middlewares: [[DateMiddleware::class, "checkDate"]])]
     public function renderDay(array $parameters): string
     {
         $day = self::resolveDay($parameters["id"] - 1);
         return View::render("day", "main", ["day" => $day]);
-    }
-
-    #[Get("/test")]
-    public function test(): string
-    {
-        return View::render("test", "main", []);
     }
 
     /**

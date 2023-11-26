@@ -21,6 +21,8 @@
 
     color: #6495ed;
     border: 3px dashed #6495ed;
+    border-radius: 2px;
+    overflow: hidden;
 }
 
 .calendar > .day.unlocked {
